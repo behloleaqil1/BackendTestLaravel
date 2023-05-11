@@ -25,3 +25,15 @@
 .toast-error {
     background-color: #bd362f !important;
 }
+
+.upper-div-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.scrollable-table {
+    height: 300px !important;
+    overflow-x: scroll;
+}

@@ -68,10 +68,8 @@ class LoanController extends Controller
             ];
         }
 
-        // Store the amortization schedule in the "loan_amortization_schedule" table
         DB::table('loan_amortization_schedule')->insert($amortizationSchedule);
 
-        // Store the extra repayment schedule in the "extra_repayment_schedule" table
         DB::table('extra_repayment_schedule')->insert($extraRepaymentSchedule);
 
         toastr()->success('You have successfully registered on our test application');
